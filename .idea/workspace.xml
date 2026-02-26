@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4d45cf-47f2-4085-b1e8-7732508c38c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/posts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/store/test_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normativ_1/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normativ_1/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/config/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
