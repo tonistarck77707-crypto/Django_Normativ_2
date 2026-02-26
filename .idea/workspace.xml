@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4d45cf-47f2-4085-b1e8-7732508c38c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/product_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normativ_1/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normativ_1/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/config/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Normativ_1" />
@@ -19,12 +34,16 @@
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="3AC7AP8V3jGDtBLsxKepZBlhfzw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
