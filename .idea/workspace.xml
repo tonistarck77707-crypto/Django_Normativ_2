@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4d45cf-47f2-4085-b1e8-7732508c38c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/posts/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normativ_1/store/templates/store/test_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normativ_1/posts/templates/posts/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normativ_1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normativ_1/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normativ_1/posts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,17 +18,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Normativ_1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3AC7AP8V3jGDtBLsxKepZBlhfzw" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,6 +43,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
