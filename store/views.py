@@ -4,13 +4,14 @@ from .forms import ProductForm
 from .forms import RegisterForm
 from django.contrib.auth import login
 from .forms import LoginForm
+from .decorators import login_required
 
 
 def product_list(request):
     products = Product.objects.all()
     return render(request, 'store/product_list.html', {'products': products})
 
-
+@login_required
 def product_create(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)
@@ -21,7 +22,7 @@ def product_create(request):
         form = ProductForm()
     return render(request, 'store/product_form.html', {'form': form})
 
-
+@login_required
 def product_update(request, pk):
     product = get_object_or_404(Product, pk=pk)
     if request.method == 'POST':
@@ -33,7 +34,7 @@ def product_update(request, pk):
         form = ProductForm(instance=product)
     return render(request, 'store/product_form.html', {'form': form})
 
-
+@login_required
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)
     if request.method == 'POST':

@@ -1,5 +1,6 @@
 from django import forms
 from .models import Product
+#from django import forms
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.contrib.auth import authenticate
@@ -34,7 +35,7 @@ class RegisterForm(forms.ModelForm):
         return cleaned_data
 
     class LoginForm(forms.Form):
-        username = forms.CharField()
+        username = forms.CharField(max_length=100)
         password = forms.CharField(widget=forms.PasswordInput)
 
         def clean(self):
