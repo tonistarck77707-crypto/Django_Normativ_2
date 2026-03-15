@@ -1,53 +1,70 @@
+{% if perms.posts.add_post %} <a href="{% url 'post_create' %}" class="btn btn-primary">Create</a>
+{% endif %}
+
 {% for post in page_obj %}
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.content|truncatewords:20 }}</p>
-{% empty %}
-    <p>Natija topilmadi</p>
+
+```
+<h3>{{ post.title }}</h3>
+<p>{{ post.content|truncatewords:20 }}</p>
+
+{% if perms.posts.change_post %}
+    <a href="{% url 'post_update' post.id %}">Edit</a>
+{% endif %}
+
+{% if perms.posts.delete_post %}
+    <a href="{% url 'post_delete' post.id %}">Delete</a>
+{% endif %}
+```
+
+{% empty %} <p>Natija topilmadi</p>
 {% endfor %}
 
 <nav>
     <ul class="pagination justify-content-center">
 
-        {% if page_obj.has_previous %}
-            <li class="page-item">
-                <a class="page-link"
-                   href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
-                    ←
-                </a>
+```
+    {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link"
+               href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
+                ←
+            </a>
+        </li>
+    {% else %}
+        <li class="page-item disabled">
+            <span class="page-link">←</span>
+        </li>
+    {% endif %}
+
+    {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+            <li class="page-item active">
+                <span class="page-link">{{ num }}</span>
             </li>
         {% else %}
-            <li class="page-item disabled">
-                <span class="page-link">←</span>
-            </li>
-        {% endif %}
-
-        {% for num in page_obj.paginator.page_range %}
-            {% if page_obj.number == num %}
-                <li class="page-item active">
-                    <span class="page-link">{{ num }}</span>
-                </li>
-            {% else %}
-                <li class="page-item">
-                    <a class="page-link"
-                       href="?page={{ num }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
-                        {{ num }}
-                    </a>
-                </li>
-            {% endif %}
-        {% endfor %}
-
-        {% if page_obj.has_next %}
             <li class="page-item">
                 <a class="page-link"
-                   href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
-                    →
+                   href="?page={{ num }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
+                    {{ num }}
                 </a>
             </li>
-        {% else %}
-            <li class="page-item disabled">
-                <span class="page-link">→</span>
-            </li>
         {% endif %}
+    {% endfor %}
 
-    </ul>
+    {% if page_obj.has_next %}
+        <li class="page-item">
+            <a class="page-link"
+               href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">
+                →
+            </a>
+        </li>
+    {% else %}
+        <li class="page-item disabled">
+            <span class="page-link">→</span>
+        </li>
+    {% endif %}
+
+</ul>
+```
+
 </nav>
